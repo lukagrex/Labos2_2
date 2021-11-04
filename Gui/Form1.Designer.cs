@@ -30,6 +30,8 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
         private void InitializeComponent()
         {
             this.resultDisplay = new Vsite.CSharp.KvadratnaJednadzba.Gui.ResultDisplay();
+            this.functionPanel1 = new Vsite.CSharp.KvadratnaJednadzba.Gui.FunctionPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.functionPanel1)).BeginInit();
             this.SuspendLayout();
             // 
             // resultDisplay
@@ -39,14 +41,24 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.resultDisplay.Size = new System.Drawing.Size(241, 383);
             this.resultDisplay.TabIndex = 1;
             // 
+            // functionPanel1
+            // 
+            this.functionPanel1.Location = new System.Drawing.Point(290, 37);
+            this.functionPanel1.Name = "functionPanel1";
+            this.functionPanel1.Size = new System.Drawing.Size(621, 336);
+            this.functionPanel1.TabIndex = 2;
+            this.functionPanel1.TabStop = false;
+            // 
             // KvadratnaJednadzba
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(257, 397);
+            this.ClientSize = new System.Drawing.Size(939, 511);
+            this.Controls.Add(this.functionPanel1);
             this.Controls.Add(this.resultDisplay);
             this.Name = "KvadratnaJednadzba";
             this.Text = "Kvadratna Jednadzba";
+            ((System.ComponentModel.ISupportInitialize)(this.functionPanel1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -54,6 +66,7 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
         #endregion
 
         private ResultDisplay resultDisplay;
+        private FunctionPanel functionPanel1;
     }
 }
 
