@@ -203,6 +203,7 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.Controls.Add(this.groupBox1);
             this.Name = "ResultDisplay";
             this.Size = new System.Drawing.Size(241, 383);
+            this.Load += new System.EventHandler(this.ResultDisplay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownA)).EndInit();

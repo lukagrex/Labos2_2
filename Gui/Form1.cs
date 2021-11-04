@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Vsite.CSharp.KvadratnaJednadzba.Gui
 {
-    public partial class Form1 : Form
+    public partial class KvadratnaJednadzba : Form
     {
-        public Form1()
+        public KvadratnaJednadzba()
         {
             InitializeComponent();
+        }
+
+        private void buttonEvaluate_Click(object sender, EventArgs e)
+        {
+            resultDisplay.FillResults();
         }
     }
 }

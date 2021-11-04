@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Labos2_2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,21 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             InitializeComponent();
         }
 
+        public readonly QuadraticEquation qe = new QuadraticEquation();
+
+        public void FillResults()
+        {
+            qe.A = (double)numericUpDownA.Value;
+            qe.B = (double)numericUpDownB.Value;
+            qe.C = (double)numericUpDownC.Value;
+
+            double discriminant = qe.Discriminant;
+
+            textBoxDiscriminant.Text = discriminant.ToString();
+            textBoxRoot1.Text = qe.Roots[0].ToString();
+            textBoxRoot2.Text = qe.Roots[1].ToString();
+        }
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -33,6 +49,11 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
         }
 
         private void textBoxRoot1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ResultDisplay_Load(object sender, EventArgs e)
         {
 
         }
