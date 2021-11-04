@@ -29,20 +29,8 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonEvaluate = new System.Windows.Forms.Button();
             this.resultDisplay = new Vsite.CSharp.KvadratnaJednadzba.Gui.ResultDisplay();
-            this.resultDisplay1 = new Vsite.CSharp.KvadratnaJednadzba.Gui.ResultDisplay();
             this.SuspendLayout();
-            // 
-            // buttonEvaluate
-            // 
-            this.buttonEvaluate.Location = new System.Drawing.Point(62, 401);
-            this.buttonEvaluate.Name = "buttonEvaluate";
-            this.buttonEvaluate.Size = new System.Drawing.Size(131, 48);
-            this.buttonEvaluate.TabIndex = 2;
-            this.buttonEvaluate.Text = "&Evaluate";
-            this.buttonEvaluate.UseVisualStyleBackColor = true;
-            this.buttonEvaluate.Click += new System.EventHandler(this.buttonEvaluate_Click);
             // 
             // resultDisplay
             // 
@@ -51,21 +39,12 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.resultDisplay.Size = new System.Drawing.Size(241, 383);
             this.resultDisplay.TabIndex = 1;
             // 
-            // resultDisplay1
-            // 
-            this.resultDisplay1.Location = new System.Drawing.Point(12, 12);
-            this.resultDisplay1.Name = "resultDisplay1";
-            this.resultDisplay1.Size = new System.Drawing.Size(241, 383);
-            this.resultDisplay1.TabIndex = 0;
-            // 
             // KvadratnaJednadzba
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(257, 476);
-            this.Controls.Add(this.buttonEvaluate);
+            this.ClientSize = new System.Drawing.Size(257, 397);
             this.Controls.Add(this.resultDisplay);
-            this.Controls.Add(this.resultDisplay1);
             this.Name = "KvadratnaJednadzba";
             this.Text = "Kvadratna Jednadzba";
             this.ResumeLayout(false);
@@ -74,9 +53,7 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
 
         #endregion
 
-        private ResultDisplay resultDisplay1;
         private ResultDisplay resultDisplay;
-        private System.Windows.Forms.Button buttonEvaluate;
     }
 }
 

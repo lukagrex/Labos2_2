@@ -30,21 +30,21 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDownA = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownB = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownC = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownB = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownA = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxDiscriminant = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBoxRoot1 = new System.Windows.Forms.TextBox();
             this.textBoxRoot2 = new System.Windows.Forms.TextBox();
+            this.textBoxRoot1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownA)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,53 +64,25 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.groupBox1.Text = "Coeficients";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label1
+            // numericUpDownC
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "&a:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "&b:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 87);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(19, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "&c:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // numericUpDownA
-            // 
-            this.numericUpDownA.DecimalPlaces = 2;
-            this.numericUpDownA.Location = new System.Drawing.Point(72, 30);
-            this.numericUpDownA.Maximum = new decimal(new int[] {
+            this.numericUpDownC.DecimalPlaces = 2;
+            this.numericUpDownC.Location = new System.Drawing.Point(72, 87);
+            this.numericUpDownC.Maximum = new decimal(new int[] {
             32000,
             0,
             0,
             0});
-            this.numericUpDownA.Minimum = new decimal(new int[] {
+            this.numericUpDownC.Minimum = new decimal(new int[] {
             32000,
             0,
             0,
             -2147483648});
-            this.numericUpDownA.Name = "numericUpDownA";
-            this.numericUpDownA.Size = new System.Drawing.Size(101, 22);
-            this.numericUpDownA.TabIndex = 3;
-            this.numericUpDownA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownC.Name = "numericUpDownC";
+            this.numericUpDownC.Size = new System.Drawing.Size(101, 22);
+            this.numericUpDownC.TabIndex = 5;
+            this.numericUpDownC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownC.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDownB
             // 
@@ -130,25 +102,56 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.numericUpDownB.Size = new System.Drawing.Size(101, 22);
             this.numericUpDownB.TabIndex = 4;
             this.numericUpDownB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownB.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
-            // numericUpDownC
+            // numericUpDownA
             // 
-            this.numericUpDownC.DecimalPlaces = 2;
-            this.numericUpDownC.Location = new System.Drawing.Point(72, 87);
-            this.numericUpDownC.Maximum = new decimal(new int[] {
+            this.numericUpDownA.DecimalPlaces = 2;
+            this.numericUpDownA.Location = new System.Drawing.Point(72, 30);
+            this.numericUpDownA.Maximum = new decimal(new int[] {
             32000,
             0,
             0,
             0});
-            this.numericUpDownC.Minimum = new decimal(new int[] {
+            this.numericUpDownA.Minimum = new decimal(new int[] {
             32000,
             0,
             0,
             -2147483648});
-            this.numericUpDownC.Name = "numericUpDownC";
-            this.numericUpDownC.Size = new System.Drawing.Size(101, 22);
-            this.numericUpDownC.TabIndex = 5;
-            this.numericUpDownC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownA.Name = "numericUpDownA";
+            this.numericUpDownA.Size = new System.Drawing.Size(101, 22);
+            this.numericUpDownA.TabIndex = 3;
+            this.numericUpDownA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numericUpDownA.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(24, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(19, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "&c:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(24, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "&b:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "&a:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 
@@ -178,6 +181,13 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Roots";
             // 
+            // textBoxRoot2
+            // 
+            this.textBoxRoot2.Location = new System.Drawing.Point(18, 79);
+            this.textBoxRoot2.Name = "textBoxRoot2";
+            this.textBoxRoot2.Size = new System.Drawing.Size(158, 22);
+            this.textBoxRoot2.TabIndex = 1;
+            // 
             // textBoxRoot1
             // 
             this.textBoxRoot1.Location = new System.Drawing.Point(18, 37);
@@ -185,13 +195,6 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.textBoxRoot1.Size = new System.Drawing.Size(158, 22);
             this.textBoxRoot1.TabIndex = 0;
             this.textBoxRoot1.TextChanged += new System.EventHandler(this.textBoxRoot1_TextChanged);
-            // 
-            // textBoxRoot2
-            // 
-            this.textBoxRoot2.Location = new System.Drawing.Point(18, 79);
-            this.textBoxRoot2.Name = "textBoxRoot2";
-            this.textBoxRoot2.Size = new System.Drawing.Size(158, 22);
-            this.textBoxRoot2.TabIndex = 1;
             // 
             // ResultDisplay
             // 
@@ -206,9 +209,9 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.Load += new System.EventHandler(this.ResultDisplay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownA)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
