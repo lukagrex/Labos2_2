@@ -20,7 +20,7 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
         public FunctionPanel()
         {
             BackColor = SystemColors.Window;
-            
+            BorderStyle = BorderStyle.FixedSingle;
             SetStyle(ControlStyles.ResizeRedraw, true);
             SetStyle(ControlStyles.DoubleBuffer, true);
             SetStyle(ControlStyles.AllPaintingInWmPaint, true);

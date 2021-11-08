@@ -33,31 +33,6 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             textBoxRoot2.Text = qe.Roots[1].ToString();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxRoot1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ResultDisplay_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void numericUpDown_ValueChanged(object sender, EventArgs e)
         {
             FillResults();

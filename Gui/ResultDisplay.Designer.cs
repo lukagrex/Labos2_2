@@ -62,7 +62,6 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Coeficients";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // numericUpDownC
             // 
@@ -132,7 +131,6 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.label3.Size = new System.Drawing.Size(19, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "&c:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -151,7 +149,6 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.label1.Size = new System.Drawing.Size(20, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "&a:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 
@@ -194,7 +191,6 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.textBoxRoot1.Name = "textBoxRoot1";
             this.textBoxRoot1.Size = new System.Drawing.Size(158, 22);
             this.textBoxRoot1.TabIndex = 0;
-            this.textBoxRoot1.TextChanged += new System.EventHandler(this.textBoxRoot1_TextChanged);
             // 
             // ResultDisplay
             // 
@@ -206,7 +202,6 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.Controls.Add(this.groupBox1);
             this.Name = "ResultDisplay";
             this.Size = new System.Drawing.Size(241, 383);
-            this.Load += new System.EventHandler(this.ResultDisplay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownC)).EndInit();
